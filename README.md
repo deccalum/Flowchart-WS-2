@@ -1,17 +1,20 @@
 ## Flowchart Workshop 2
 
-#### TABLE OF CONTENTS
+### TABLE OF CONTENTS
 
-- [Total & Average](#total--average)
-- [Multiplication Table](#multiplication-table)
-- [Positive Negative Zero Check](#positive-negative-zero-check)
-- [Interest Calculator](#interest-calculator)
-- [Average Temperature](#average-temperature)
-- [Area For Square](#area-for-square)
-- [Pass or Fail](#pass-or-fail)
-- [Factorial](#factorial)
+<small>
+
+- [Total & Average](#total--average)<br>
+- [Multiplication Table](#multiplication-table)<br>
+- [Positive Negative Zero Check](#positive-negative-zero-check)<br>
+- [Interest Calculator](#interest-calculator)<br>
+- [Average Temperature](#average-temperature)<br>
+- [Area For Square](#area-for-square)<br>
+- [Pass or Fail](#pass-or-fail)<br>
+- [Factorial](#factorial)<br>
 - [Calculate Discount](#calculate-discount)
 
+</small>
 <br>
 
 ### Total & Average
@@ -116,7 +119,7 @@ flowchart TD
 
 ```pseudocode
 START
-    INPUT amount, rate, years
+    INPUT amount,rate,years
     interest = (amount * rate) * years
     PRINT interest
 END
@@ -167,11 +170,11 @@ flowchart TD
     A --> C[INITIALIZE<br/>Total Temp = 0]:::process
     B & C --> D{Day Counter < 7}:::decision
     D -- YES --> E[/INPUT<br/>Temperature/]:::input
-    E --> F[Total Temp =<br/>Total Temp + Temp]:::calc
+    E --> F[Total Temp =<br/>Total Temp + Temperature]:::calc
     F --> G[Day Counter =<br/>Day Counter + 1]:::calc
     G --> D
     D -- NO --> H[Average Temp =<br/>Total Temp &div; 7]:::calc
-    H --> I[/PRINT<br/>Average Temp/]:::output
+    H --> I[/PRINT<br/>Average Temperature/]:::output
     I --> J([END]):::start
 
     classDef start color:#fff,fill:#111111,stroke:#3,stroke-width:4px
@@ -201,7 +204,7 @@ END
 %%{init: {'flowchart': {'curve': 'linear'}} }%%
 flowchart TD
     A([START]):::AZ --> B[/INPUT Length & Width/]:::IO
-    B --> C(Area = Length &times; Width):::CA
+    B --> C(Length &times; Width):::CA
     C --> D[/PRINT Area/]:::IO
     D --> E([END]):::AZ
 
